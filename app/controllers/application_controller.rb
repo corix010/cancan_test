@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    User.all[0]
+    User.all[1]
   end
 
 end

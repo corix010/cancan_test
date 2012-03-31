@@ -8,6 +8,8 @@ class Ability
 
        if user.is?('admin')
          can :access, :all
+       elsif user.is?('user')
+         can :index, categories
        end
     #
     # Here if there is a user he will be able to perform any action on any controller.
